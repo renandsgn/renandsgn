@@ -12,11 +12,11 @@ var notify = require('gulp-notify');
 var plumber = require('gulp-plumber');
 var flatmap = require('gulp-flatmap');
 var path = require('path');
+var connect = require('gulp-connect-php');
 var browserSync = require('browser-sync');
 var minify = require('gulp-minify');
 var uglify = require('gulp-uglify-es').default;
 var jsImport = require('gulp-js-import');
-var connect = require('gulp-connect-php');
 
  
 gulp.task('image', done => {
