@@ -18,7 +18,10 @@ var minify = require('gulp-minify');
 var uglify = require('gulp-uglify-es').default;
 var jsImport = require('gulp-js-import');
 
- 
+gulp.task('connect', function() {
+    return connect.server();
+}); 
+
 gulp.task('image', done => {
   return gulp.src('img/**/*.jpg')
     .pipe(image({
